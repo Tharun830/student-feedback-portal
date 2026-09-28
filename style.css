@@ -1,0 +1,176 @@
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f7fb;
+color: #333;
+min-height: 100vh;
+}
+
+.header {
+background: linear-gradient(135deg, #2563eb, #1d4ed8);
+color: white;
+padding: 35px 20px;
+text-align: center;
+}
+
+.header h1 {
+margin-bottom: 10px;
+font-size: 32px;
+}
+
+.header p {
+font-size: 16px;
+}
+
+.container {
+width: 90%;
+max-width: 900px;
+margin: auto;
+}
+
+.feedback-card,
+.feedback-list {
+background: white;
+margin: 30px auto;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+color: #1e3a8a;
+margin-bottom: 25px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+input[type="text"],
+select,
+textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccd4e0;
+border-radius: 7px;
+font-size: 15px;
+outline: none;
+transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+border-color: #2563eb;
+}
+
+textarea {
+resize: vertical;
+}
+
+.rating {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.rating label {
+cursor: pointer;
+padding: 8px;
+border-radius: 6px;
+}
+
+.rating input {
+margin-right: 4px;
+}
+
+button {
+width: 100%;
+background: #2563eb;
+color: white;
+border: none;
+padding: 14px;
+border-radius: 7px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+button:hover {
+background: #1d4ed8;
+}
+
+#message {
+margin-top: 15px;
+text-align: center;
+font-weight: bold;
+}
+
+.success {
+color: #15803d;
+}
+
+.error {
+color: #dc2626;
+}
+
+.feedback-item {
+border-left: 5px solid #2563eb;
+background: #f8fafc;
+padding: 18px;
+margin-bottom: 15px;
+border-radius: 7px;
+}
+
+.feedback-item h3 {
+color: #1e3a8a;
+margin-bottom: 8px;
+}
+
+.feedback-item p {
+margin: 6px 0;
+}
+
+.rating-display {
+color: #f59e0b;
+}
+
+.empty-message {
+text-align: center;
+color: #777;
+}
+
+footer {
+text-align: center;
+padding: 25px;
+background: #1e293b;
+color: white;
+margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+.header h1 {
+font-size: 25px;
+}
+
+.feedback-card,
+.feedback-list {
+    padding: 20px;
+}
+
+.rating {
+    flex-direction: column;
+}
+}
